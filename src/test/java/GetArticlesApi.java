@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 
 public class GetArticlesApi {
-    private static String url = "https://api.reverb.com/api/articles/?author_name=Mallory%20Nees";
+    private static String url = "https://api.reverb.com/api/articles";
 
     @Test
     public void testGetUrl() throws IOException {
@@ -19,9 +19,8 @@ public class GetArticlesApi {
         HttpResponse response = client.execute(request);
         HttpEntity entity = response.getEntity();
 
-        System.out.println("Response: " + response.getStatusLine().getStatusCode());
+        System.out.println("Status code: " + response.getStatusLine().getStatusCode());
         System.out.println("Body:\n" + EntityUtils.toString(entity));
-
 
     }
 
