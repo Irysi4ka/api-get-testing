@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class ApiGetTest {
+public class GetArticlesApi {
     private static String url = "https://api.reverb.com/api/articles/?author_name=Mallory%20Nees";
 
     @Test
